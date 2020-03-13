@@ -2,11 +2,19 @@
   but adapted to work on the ATTiny25/45/85 by Adam Welch (http://adamwelch.co.uk).
 */
 
+#include <Arduino.h>
 #include <avr/power.h>
 #include <avr/wdt.h>
 #include <avr/sleep.h>
 
 #include "PWM85.h"
+
+// Prototypes
+void PWR_start_ADC();
+void PWR_stop_ADC();
+void PWM_setup_Pump();
+void PWM_setup_Driver();
+void WDT_Sleep(byte WDTO_time);
 
 /*
   ArduinoIDE
