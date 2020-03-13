@@ -30,7 +30,7 @@
   R2 = value of R2 in the circuit (20000 ohms by design)
 */
 
-#define floatV 13.5
-#define regulatorV 3.3
+#define floatV 13.65
+#define regulatorV 3.294
 #define R1 82000
 #define R2 20000
